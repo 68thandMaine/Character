@@ -1,31 +1,151 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Celebrity dating quiz</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <form>
-      <div class="form-row">
+<head>
+  <meta charset="utf-8">
+  <title>Celebrity dating quiz</title>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <!-- below is the header -->
+  <div>
+    <h1>Are you more like Harry Potter, Wonderwoman, Daenerys Targaryen, or James Bond?</h1>
+  </div>
+  <!-- below is the form -->
+<form>
+    <div class="form-row">
+      <!-- /* name input below */ -->
+      <div class="col-lg-4 mb-3">
+        <label for"validationCustom1">Please enter your name:</label>
+        <input type="text" class="form-control" id="validationCustom1" placeholder="e.g. John Doe" value="" required>
+        <div class ="valid-feedback">Looks good</div>
+      </div>
+      <!-- Preferance input below -->
+      <div class="col-lg-4 mb-3">
+        <div class="dropdown">
+          <div class="form-row align-items-center">
+            <!-- below is HP vs WW -->
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Do you have fancy boots?</label>
+              <h3 class="question">Do you have fancy boots?</h3>
+              <select class="custom-select mr-sm-2" id="hp_ww">
+                <option selected>Choose...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+            <!-- below is HP vs DT -->
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Do you prefer a dry or wet climate</label>
+              <h3 class="question">Would you prefer a dry or wet climate?</h3>
+              <select class="custom-select mr-sm-2" id="hp_DT">
+                <option selected>Choose...</option>
+                <option value="dry">Dry</option>
+                <option value="wet">Wet</option>
+                <option value="both">Doesn't matter</option>
+              </select>
+            </div>
+            <!-- below is hp vs jb -->
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">>Do you work for a goverment</label>
+              <h3 class="question">Do you work for a government?</h3>
+              <select class="custom-select mr-sm-2" id="hp_jb">
+                <option selected>Choose...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+            <!-- below is island question -->
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">>Do you live on an island</label>
+              <h3 class="question">Do you live on an island?</h3>
+              <select class="custom-select mr-sm-2" id="island">
+                <option selected>Choose...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+            <!-- below is potato vs taco -->
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">>Do you like potatos or tacos</label>
+              <h3 class="question">Do prefer tacos or potatos?</h3>
+              <select class="custom-select mr-sm-2" id="tater_taco">
+                <option selected>Choose...</option>
+                <option value="1">Tacos</option>
+                <option value="2">potato</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+<!-- Below are the character panels  -->
+<div class="container" id="characters">
 
-        <!-- /* name input below */ -->
-        <div class="col-lg-4 mb-3">
-          <label for"validationCustom1">Please enter your name:</label>
-          <input type="text" class="form-control" id="validationCustom1" placeholder="e.g. John Doe" value="" required>
-          <div class ="valid-feedback">Looks good</div>
-        </div>
-        <!-- Age input below  -->
-        <div class="col-lg-4 mb-3">
-          <label for"validationCustom2">Please enter your age:</label>
-          <input type="text" class="form-control" id="validationCustom2" placeholder="e.g. 13" value="" required>
-          <div class ="valid-feedback">Looks good</div>
-        </div>
-       <!-- Preferance input below -->
-       
-    </form>
-  </body>
+  <div class="panel panel-default" id="harrypotter">
+    <div class="panel-heading">
+      <h3>You matched with:</h3>
+    </div>
+    <div class="panel-body">
+      <img src="wl.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default" id="jamesbond">
+    <div class="panel-heading">
+      <h3>You matched with:</h3>
+    </div>
+    <div class="panel-body">
+      <img src="wl.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default" id="wonderwoman">
+    <div class="panel-heading">
+      <h3>You matched with:</h3>
+    </div>
+    <div class="panel-body">
+      <img src="wl.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <div class="panel panel-default" id="daenerystargaryen">
+    <div class="panel-heading">
+      <h3>You matched with:</h3>
+    </div>
+    <div class="panel-body">
+      <img src="wl.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</div>
+<!-- Below are the point containers -->
+<div class="pointcontainer">
+  <div>
+    <ul id="HP">
+
+    </ul>
+    <ul id="WW">
+
+    </ul>
+
+    <ul id="DT">
+
+    </ul>
+    <ul id="JB">
+
+    </ul>
+
+  </div>
+</div>
+
+
+</body>
 </html>
