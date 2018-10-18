@@ -15,15 +15,15 @@
     <h1>Are you more like Harry Potter, Wonderwoman, Daenerys Targaryen, or James Bond?</h1>
   </div>
   <!-- below is the form -->
-<form>
+<form id="formOne">
     <div class="form-row">
       <!-- /* name input below */ -->
       <div class="col-lg-4 mb-3">
-        <label for"validationCustom1">Please enter your name:</label>
-        <input type="text" class="form-control" id="validationCustom1" placeholder="e.g. John Doe" value="" required>
+        <label for"name">Please enter your name:</label>
+        <input type="text" class="form-control" id="nme" placeholder="e.g. John Doe" value="" required>
         <div class ="valid-feedback">Looks good</div>
       </div>
-      <!-- Preferance input below -->
+      <!-- Questions below -->
       <div class="col-lg-4 mb-3">
         <div class="dropdown">
           <div class="form-row align-items-center">
@@ -33,8 +33,8 @@
               <h3 class="question">Do you have fancy boots?</h3>
               <select class="custom-select mr-sm-2" id="hp_ww">
                 <option selected>Choose...</option>
-                <option value="1">Yes</option>
-                <option value="2">No</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
               </select>
             </div>
             <!-- below is HP vs DT -->
@@ -82,6 +82,7 @@
         </div>
       </div>
     </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <!-- Below are the character panels  -->
 <div class="container" id="characters">
@@ -129,6 +130,9 @@
 <!-- Below are the point containers -->
 <div class="pointcontainer">
   <div>
+    <ul id="namelist">
+
+    </ul>
     <ul id="HP">
 
     </ul>
