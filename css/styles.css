@@ -1,0 +1,18 @@
+
+
+#minor {
+  display: none;
+  float: left;
+  border: solid;
+
+}
+
+#legal {
+  display: none;
+  float: left;
+  border: solid;
+}
+
+form {
+  margin-bottom: 5px;
+}
